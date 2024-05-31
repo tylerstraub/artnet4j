@@ -181,7 +181,7 @@ public class ArtNetServer extends ArtNetNode implements Runnable {
                 socket.bind(new InetSocketAddress(networkAddress, port));
                 logger.info("Art-Net server started at: " + networkAddress.getHostAddress() + ":" + port);
             } else {
-                logger.info("Art-Net server started as sender using ephemeral port.");
+                logger.info("Art-Net server started at: " + networkAddress.getHostAddress() + ":" + port + " (ephemeral mode)");
             }
 
             for (ArtNetServerListener l : listeners) {
