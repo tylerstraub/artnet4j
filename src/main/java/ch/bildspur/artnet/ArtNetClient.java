@@ -49,7 +49,7 @@ public class ArtNetClient {
      * Start client with default arguments (listen on broadcast).
      */
     public void start() {
-        this.start(null, inputBuffer != null);
+        this.start(null, true); // default to static binding (receiver mode)
     }
 
     /**
